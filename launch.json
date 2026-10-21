@@ -1,0 +1,24 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "SoothToken",
+    "name": "Sooth Protocol",
+    "symbol": "SOOTH",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0x5f7bb59365ce557c26dbcaa4ee9d39a4b95b7127",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "economics": {
+    "poolBps": 8000,
+    "initialMarketCapWei": "3500000000000000000000",
+    "remainderTo": "0x6bf192ebef135e0f645e99d59d9bf44e7711606c"
+  },
+  "notes": "SoothToken (src/SoothToken.sol) is a plain OpenZeppelin ERC-20 named Sooth Protocol with symbol SOOTH and 18 decimals. Its constructor takes no arguments and mints the whole supply of 1,000,000,000 SOOTH (1000000000000000000000000000 minor units, the INITIAL_SUPPLY constant) once to msg.sender, which at launch is the factory. There are no transfer taxes, burns, rebases, exemptions, mint, pause, blacklist, ownership, upgrade or rescue functions, so every launch flow (the distributor transfer, the single-sided pool seed and trader swaps through the PoolManager) moves exactly the amount requested. No application contracts are deployed with this launch and no initialization calls are needed."
+}
